@@ -1,13 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Inciando Sitio Web </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/Actividad-1-git-vs-github/src/styles/style.css"
+    />
+    <title>Git vs GitHub</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="#ffffff" d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82"/></svg>
+        <div><p>VS</p></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+      </div>
+      <nav class="header-nav">
+        <div
+          class="btn-group header-nav-container"
+          role="group"
+          aria-label="Button group with nested dropdown"
+        >
+          <div class="btn-group header-nav-container-childrem" role="group">
+            <button
+              type="button"
+              class="btn dropdown-toggle button-ver-mas"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Ver mas
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="" class="dropdown-item">Hero</a></li>
+              <li><a href="" class="dropdown-item">¿Qué es Git?</a></li>
+              <li><a href="" class="dropdown-item">¿Qué es GitHub?</a></li>
+              <li><a href="" class="dropdown-item">Diferencias</a></li>
+              <li><a href="" class="dropdown-item">Cómo trabajan juntos</a></li>
+              <li>
+                <a href="" class="dropdown-item">Conceptos clave de Git</a>
+              </li>
+              <li>
+                <a href="" class="dropdown-item">Colaboración en GitHub</a>
+              </li>
+              <li>
+                <a href="" class="dropdown-item">¿Por qué usar Git + GitHub?</a>
+              </li>
+              <li><a href="" class="dropdown-item">CTA final</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-</body>
+    <main>
+        <!-- seccion 1 introduccion a los conceptos -->
+      <section class="section-inicio-lading-page">
+        <div class="container-icon-title-home">
+          <div class="container-logo-vs">
+            <img
+              src="/Actividad-1-git-vs-github/src/assets/git-vs-github.png"
+              alt=""
+            />
+          </div>
+          <h2>Entendé la diferencia de verdad</h2>
+        </div>
+      </section>
+      <section class="section-info-dark">
+        <div class="container-git">
+          <h2 class="title-tecno"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="#ffffff" d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82"/></svg>¿Qué es Git?</h2>
+          <div class="container-info">
+            <div class="card-info">
+              <p>
+                Git es un sistema de control de versiones distribuido. Sirve
+                para registrar cambios en archivos a lo largo del tiempo,
+                permitiendo:
+              </p>
+            </div>
+            <div class="card-info">
+              <ul class="list-git-gitHub">
+                <li>Volver a versiones anteriores</li>
+                <li>Trabajar en equipo sin pisarse el código</li>
+                <li>
+                  Crear ramas (branches) para desarrollar nuevas funcionalidades
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="containet-git-hub">
+          <h2 class="title-tecno"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>¿Qué es GitHub?</h2>
+          <div class="container-info">
+            <div class="card-info">
+              <p>
+                GitHub es una plataforma en la nube que utiliza Git. Permite:
+              </p>
+            </div>
+            <div class="card-info">
+              <ul class="list-git-gitHub">
+                <li>Guardar repositorios en internet</li>
+                <li>Colaborar con otros desarrolladores</li>
+                <li>
+                  Compartir proyectos
+                </li>
+                <li>Gestionar cambios mediante pull requests</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <p class="description-git-github">GitHub necesita Git, pero Git NO necesita GitHub.</p>
+      </section>
+
+      <!-- section 2 diferencias -->
+       <section class="section-diferencias section-info-dark">
+
+        <div class="section-diferencias-container">
+
+            <h2>Diferencias clave entre Git y GitHub</h2>
+            <table class="table-styles">
+                <tr class="table-header">
+                    <th >Git</th>
+                    <th >GitHub</th>
+    
+                </tr>
+                <tr>
+                    <td>Herramienta (software)</td>
+                    <td>Plataforma (servicio web)</td>
+                </tr>
+                <tr>
+                    <td>Funciona localmente</td>
+                    <td>Funciona en la nube</td>
+                </tr>
+                <tr>
+                    <td>Control de versiones</td>
+                    <td>Hosting de repositorios</td>
+                </tr>
+                <tr>
+                    <td>No requiere internet</td>
+                    <td>Requiere internet</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section-diferencias-container">
+            <h3>Flujo de trabajo</h3>
+            <div class="container-flujo" >
+                <ol>
+                    <li><b>Crea</b>r repositorio (GitHub)</li>
+                    <li><b>Clonar</b> repositorio (Git)</li>
+                    <li><b>Crear</b> cambios en el código</li>
+                    <li><b>git add</b> → preparar cambios</li>
+                    <li><b>git commit</b> → guardar cambios</li>
+                    <li><b>git push</b> → subir cambios a GitHub</li>
+                </ol>
+            </div>
+        </div>
+       </section>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </html>
